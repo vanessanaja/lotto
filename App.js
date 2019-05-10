@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Ball from './Ball';
 import Lottery from './Lottery';
 
 class App extends Component {
@@ -8,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <Lottery />
+        <Lottery title='Mini Daily' maxNum={10} numBalls={4} />
       </div>
     );
   }
