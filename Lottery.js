@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import "./Lottery.css";
+import React, { Component } from 'react';
+import './Lottery.css';
+import Ball from './Ball'
 
 class Lottery extends Component{
   static defaultProps = {
@@ -23,7 +24,7 @@ class Lottery extends Component{
       <section className="Lottery">
         <h1>{this.props.title}</h1>
         <div>
-          Balls go here
+          {this.state.nums.map(n => <Ball num={n}/>)}
         </div>
         <button onClick={this.handleClick}>Generate</button>
       </section>
