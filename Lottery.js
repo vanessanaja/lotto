@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Lottery.css";
 
 class Lottery extends Component{
-  static default props = {
+  static defaultProps = {
     title: 'Lotto',
     numBalls: 6,
     maxNum: 40
@@ -13,7 +13,12 @@ class Lottery extends Component{
   }
   render(){
     return (
-      <section className="Lottery"></section>
+      <section className="Lottery">
+        <h1>{this.props.title}</h1>
+        <div>
+          Balls go here
+        </div>
+      </section>
     );
   }
 }
