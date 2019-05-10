@@ -4,18 +4,19 @@ import "./Lottery.css";
 class Lottery extends Component{
   static defaultProps = {
     title: 'Lotto',
-    numBalls: 6,
+    maxBalls: 6,
     maxNum: 40
   }
   constructor(props){
     super(props);
-    this.state = {nums: []}
+    this.state = {nums: Array.from({length: this.props.maxBalls})}
   }
   generate(){
-
+    //create random numbers between 1 and maxNum
+    Math.floor(Math.random)
   }
   handleClick(){
-    
+     
   }
   render(){
     return (

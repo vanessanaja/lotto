@@ -7,7 +7,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Ball num={17} />
+        <Lottery />
       </div>
     );
   }
