@@ -11,6 +11,12 @@ class Lottery extends Component{
     super(props);
     this.state = {nums: []}
   }
+  generate(){
+
+  }
+  handleClick(){
+    
+  }
   render(){
     return (
       <section className="Lottery">
@@ -18,6 +24,7 @@ class Lottery extends Component{
         <div>
           Balls go here
         </div>
+        <button onClick={this.handleClick}>Generate</button>
       </section>
     );
   }
